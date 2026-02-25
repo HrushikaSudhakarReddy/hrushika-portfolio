@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fashion Trends Forecasting — Hrushika Sudhakar Reddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html">← Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="projLabel">Project</div>
+        <h1 class="projTitle">Fashion Trends Forecasting</h1>
+        <div class="projSub">Python, Google Trends, Prophet, TFT, Rolling-origin backtests</div>
+
+        <div class="projGrid">
+          <div class="projCard">
+            <div class="projSectionTitle">Overview</div>
+            <p style="margin:0;">A time-series forecasting project that turns trend signals into a reproducible dataset and produces 12-week forecasts for planning.</p>
+          </div>
+
+          <div class="projCard">
+            <div class="projSectionTitle">Business problem</div>
+            <p style="margin:0;">Trend-driven demand is hard to plan for because it shifts with seasonality and events. The goal was to forecast near-term trends and quantify uncertainty, so decisions can be based on backtested model performance rather than intuition.</p>
+          </div>
+
+          <div class="projCard">
+            <div class="projSectionTitle">What I built</div>
+            <ul class="projBullets"><li>Built reproducible dataset from Google Trends (5-year weekly) and engineered seasonal and holiday features.</li>
+<li>Trained Prophet and TFT with rolling-origin backtests and compared against a naïve seasonal baseline using MAPE, sMAPE, and MASE.</li>
+<li>Produced 12-week forecasts with confidence intervals and deployed a Streamlit dashboard for exploration.</li></ul>
+          </div>
+
+          <div class="projCard">
+            <div class="projSectionTitle">Results</div>
+            <ul class="projBullets"><li>Delivered a repeatable forecasting workflow with rolling-origin evaluation for honest performance measurement.</li>
+<li>Provided 12-week forecasts with confidence intervals to support planning and seasonal strategy.</li>
+<li>Enabled rapid scenario review through an interactive Streamlit dashboard.</li></ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

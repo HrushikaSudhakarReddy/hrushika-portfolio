@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pregnancy Coach RAG — Hrushika Sudhakar Reddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="../index.html">← Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="projLabel">Project</div>
+        <h1 class="projTitle">Pregnancy Coach RAG</h1>
+        <div class="projSub">LangChain, ChromaDB, FastAPI, Retrieval evaluation, Safety gating</div>
+
+        <div class="projGrid">
+          <div class="projCard">
+            <div class="projSectionTitle">Overview</div>
+            <p style="margin:0;">An LLM-powered retrieval-augmented generation system designed for grounded answers with citations, built as a production-style chat API.</p>
+          </div>
+
+          <div class="projCard">
+            <div class="projSectionTitle">Business problem</div>
+            <p style="margin:0;">LLM responses can be inconsistent and can hallucinate without grounding. The goal was to build a system that retrieves the right evidence, generates reliable answers with citations, and measures quality using evaluation metrics rather than subjective spot-checking.</p>
+          </div>
+
+          <div class="projCard">
+            <div class="projSectionTitle">What I built</div>
+            <ul class="projBullets"><li>Built a RAG pipeline with citations, memory, and reranking, exposed through a production-style /chat API (LangChain, ChromaDB, FastAPI).</li>
+<li>Designed an intent and safety classifier and evaluated on 200+ queries using a confusion matrix.</li>
+<li>Measured retrieval effectiveness with retrieval metrics (Recall@K, MRR) and iterated using repeatable evaluation runs.</li>
+<li>Tuned chunking strategy, top-k retrieval, and reranking to improve relevance and reduce hallucination.</li></ul>
+          </div>
+
+          <div class="projCard">
+            <div class="projSectionTitle">Results</div>
+            <ul class="projBullets"><li>Improved answer grounding by enforcing citation-based responses from retrieved sources.</li>
+<li>Made reliability measurable via classifier evaluation and retrieval metrics, enabling structured iteration.</li>
+<li>Increased relevance through systematic chunking and reranking experiments.</li></ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
